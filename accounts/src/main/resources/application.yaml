@@ -11,3 +11,13 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+
+application:
+  message: "REST APIs to perform CRUD operation on account"
+  contact:
+    name: "Krishna"
+    designation: "Senior java developer"
+  OnCallSupport:
+    - (+91) - 9876543210
+    - (+91) - 9753108642
