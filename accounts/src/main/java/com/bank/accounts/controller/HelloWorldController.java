@@ -26,6 +26,9 @@ public class HelloWorldController {
     @Autowired
     private ApplicationDetailsDto applicationDetailsDto;
 
+    @Value("${build.version}")
+    private String buildInfo;
+
     private final AccountsServiceImpl accountsService;
 
     public HelloWorldController(AccountsServiceImpl accountsService) {
@@ -51,5 +54,10 @@ public class HelloWorldController {
     @GetMapping("/app-details")
     public ResponseEntity<ApplicationDetailsDto> getApplicationDetails(){
         return ResponseEntity.status(HttpStatus.OK).body(applicationDetailsDto);
+    }
+
+    @GetMapping("/build-info")
+    public String getBuildInfo(){
+        return buildInfo;
     }
 }

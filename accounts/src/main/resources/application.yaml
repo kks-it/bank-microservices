@@ -12,6 +12,8 @@ spring:
       ddl-auto: update
     show-sql: true
 
+build:
+  version: 1.0
 
 application:
   message: "REST APIs to perform CRUD operation on account"

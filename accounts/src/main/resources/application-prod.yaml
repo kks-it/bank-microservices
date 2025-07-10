@@ -1,0 +1,11 @@
+build:
+  version: 2.0
+
+application:
+  message: "REST APIs to perform CRUD operation on account - production"
+  contact:
+    name: "Krishna Kumar Singh"
+    designation: "Senior java microservices developer"
+  OnCallSupport:
+    - (+91) - 9876543210
+    - (+91) - 9753108642

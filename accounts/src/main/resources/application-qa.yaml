@@ -1,0 +1,11 @@
+build:
+  version: 3.0
+
+application:
+  message: "REST APIs to perform CRUD operation on account - QA"
+  contact:
+    name: "Krishna Singh"
+    designation: "Senior java spring boot developer"
+  OnCallSupport:
+    - (+91) - 1234567890
+    - (+91) - 9753108642
