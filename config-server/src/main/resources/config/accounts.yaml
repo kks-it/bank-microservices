@@ -1,8 +1,8 @@
 build:
-  version: 3.0
+  version: 1.0
 
 application:
-  message: "REST APIs to perform CRUD operation on account - QA"
+  message: "REST APIs to perform CRUD operation on account"
   contact:
     name: "Krishna Singh"
     designation: "Senior java spring boot developer"
