@@ -2,12 +2,21 @@ spring:
   application:
     name: config-server
   profiles:
-    active: native
+    active: git
+#    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/config
+        git:
+          uri: https://github.com/kks-it/bank-config.git
+          default-label: main  #default git branch
+          timeout: 5     #should read all properties from git server within 5 seconds of app started else throw exception
+          clone-on-start: true  #when to clone the config files from git repo locally.default is when first request comes to config-server. on-start means during app start
+          force-pull: true #pull latest changes from remote git server on every start/restart rather than being relied on local cloned files
+
+#        native:
+#          search-locations: classpath:/config
+#          search-locations: file:///Users//krishna//Documents//config
 
 server:
   port: 8071
